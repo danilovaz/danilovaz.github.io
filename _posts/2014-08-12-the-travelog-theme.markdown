@@ -9,10 +9,12 @@ tags: talks front-end workflow
 
 Hey guys! 
 
-I am offering here my presentation about front-end workflow that I use and that will be of great help to back-enders :) 
+I am offering here my presentation about front-end workflow that I use and that will be of great help to back-enders :)
+
+You can download [here](https://speakerdeck.com/danilovaz/front-end-to-back-enders)
 
 <div class="post-image">
-    <img src="./img/talk-workflow.jpg" />
+    <img src="/img/talk-workflow.jpg" />
     <p class="post-image-caption">Front-end to Back-enders - Fucking Awesome Tools.</p>
 </div>
 
