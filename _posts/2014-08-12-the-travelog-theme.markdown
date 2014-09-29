@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My talk at Focusnetworks: Front-end to Back-enders"
-date:   2014-09-29 03:39:55
+date:   2014-09-28 03:39:55
 categories: talks
 location: São José dos Campos, Brazil 
 tags: talks front-end workflow
