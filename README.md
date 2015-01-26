@@ -9,3 +9,6 @@ I used the theme: Travelog [code here](https://github.com/rowanoulton/travelog-t
 [MIT](https://github.com/rowanoulton/travelog-theme/blob/master/LICENSE)
 
 Attribution is totally not necessary, use it as you please. If you'd like to throw me a shoutout or say thanks, I'm on [@rowanoulton](https://twitter.com/rowanoulton/).
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/danilovaz/danilovaz.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
