@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Danilo Vaz</title>
+    <atom:link href="http://danilovaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://danilovaz.github.io/</link>
+    <description>Oi, eu sou Danilo Vaz. Um desenvolvedor caipira de Cunha que mora em São José dos Campos. Também trabalho em uma empresa maravilhosa que tem mesa de bilhar.</description>
+    <pubDate>Sun, 01 Feb 2015 21:50:25 -0200</pubDate>
+    
+      <item>
+        <title>Série de posts sobre Slush</title>
+        <link>http://danilovaz.github.io/2015/02/01/serie-de-posts-sobre-slush.html</link>
+        <guid isPermaLink="true">http://danilovaz.github.io/2015/02/01/serie-de-posts-sobre-slush.html</guid>
+        <description>&lt;p&gt;Generators já não é assunto novo no meio de desenvolvimento, principalmente para quem constantemente está em busca de aperfeiçoar seu workflow.&lt;/p&gt;
+
+&lt;p&gt;Um generator bastante conhecido da galera é o &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt;, existem vários artigos em português falando a respeito dele. Mas existem muito poucos falando sobre o &lt;a href=&quot;http://slushjs.github.io/&quot;&gt;Slush&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Obviamente quantidade não é qualidade, mas às vezes com tão pouco artigos você não encontra exatamente o que está procurado.&lt;/p&gt;
+
+&lt;p&gt;Pensando nisso, elaborei uma série de posts dividida em 3 partes onde vou abordar os seguintes tópicos:&lt;/p&gt;
+
+&lt;h4 id=&quot;conhea-o-slush&quot;&gt;Conheça o Slush&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;O que é Slush?&lt;/li&gt;
+  &lt;li&gt;Por que utilizar o Slush e não o Yeoman?&lt;/li&gt;
+  &lt;li&gt;Quando utilizar o Slush?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;slush-primeiros-passos&quot;&gt;Slush, primeiros passos&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Instalando Slush&lt;/li&gt;
+  &lt;li&gt;Criando seu primeiro scaffolding com Slush&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;criando-seu-prprio-generator-com-slush&quot;&gt;Criando seu próprio generator com Slush&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Criando seu próprio generator&lt;/li&gt;
+  &lt;li&gt;Publicando seu generator&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A primeira parte é mais filosófica. Onde pretendo explicar o que o Slush se propõe a fazer, a diferença entre ele e o Yeoman e quando eu acho válido utilizar o Slush.&lt;/p&gt;
+
+&lt;p&gt;Se você ainda não conhece sobre nem um e nem outro, não se preocupe. A primeira parte sobre Slush é justamente para situar tanto quem nunca viu um generator quanto para quem só viu Yeoman.&lt;/p&gt;
+
+&lt;p&gt;Acompanhe o blog e não perca a primeira parte sobre Slush :)&lt;/p&gt;
+
+&lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Mostre-me teu código que te digo quem tu és.”
+- Danilo Vaz&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 01 Feb 2015 00:00:00 -0200</pubDate>
+      </item>
+    
+      <item>
+        <title>Lançamento do blog e #1postpordia</title>
+        <link>http://danilovaz.github.io/2015/01/31/lancamento-do-blog-e-%231postpordia.html</link>
+        <guid isPermaLink="true">http://danilovaz.github.io/2015/01/31/lancamento-do-blog-e-%231postpordia.html</guid>
+        <description>&lt;p&gt;Fala galera!&lt;/p&gt;
+
+&lt;p&gt;Esse é o primeiro post do meu blog (yeeeeeaaaah!). Finalmente criei coragem (ou vergonha na cara?) de criar meu blog para compartilhar minhas divagações webnéticas :p e me estimular a me atualizar cada vez mais. Afinal de contas, aprende-se muito mais quando se ensina.&lt;/p&gt;
+
+&lt;p&gt;Para não deixar a peteca cair, vou abraçar a ideia do &lt;a href=&quot;https://github.com/fdaciuk&quot;&gt;Fernando Daciuk&lt;/a&gt; e &lt;a href=&quot;https://github.com/willianjusten&quot;&gt;Willian Justen&lt;/a&gt; de criar &lt;a href=&quot;http://willianjusten.com.br/um-post-por-dia/&quot;&gt;#1postpordia&lt;/a&gt;. Não é uma tarefa fácil, mas vamos ver se consigo manter o ritmo.&lt;/p&gt;
+
+&lt;p&gt;Não sei bem se esse post aqui conta rs, mas por via das dúvidas começo postando amanhã algo relevante. Tenho plena consciência que ao longo do tempo vou ter que ir aperfeiçoando meus posts.&lt;/p&gt;
+
+&lt;p&gt;Não tenho obrigação de acertar, mas tenho a obrigação de corrigir para não ficar disseminando informações errôneas que podem atrapalhar e prejudicar quem quer que seja; por isso estou aberto à sugestões e críticas sobre o blog e posts que eu for lançando.&lt;/p&gt;
+
+&lt;p&gt;Sinta-se livre para me enviar um tweet &lt;a href=&quot;https://twitter.com/_danilovaz&quot;&gt;aqui&lt;/a&gt; ou abra uma issue &lt;a href=&quot;https://github.com/danilovaz&quot;&gt;aqui&lt;/a&gt; no seguinte formato: Erro Post {nome do post} e na mensagem explique o que encontrou e qual a melhor maneira de corrigir.&lt;/p&gt;
+
+&lt;p&gt;Isso é tudo pessoal. Não vou ficar me apresentando pois o importante nesse blog não sou eu, mas os posts. Mas caso queira me conhecer, além do &lt;a href=&quot;https://twitter.com/_danilovaz/&quot;&gt;Twitter&lt;/a&gt; e &lt;a href=&quot;https://github.com/danilovaz&quot;&gt;Github&lt;/a&gt;, você pode me encontrar no &lt;a href=&quot;http://br.linkedin.com/in/danilovaz&quot;&gt;Linkedin&lt;/a&gt; e no &lt;a href=&quot;https://www.facebook.com/vazdanilo&quot;&gt;Facebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Mostre-me teu código que te digo quem tu és.”
+- Danilo Vaz&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 00:00:00 -0200</pubDate>
+      </item>
+    
+  </channel>
+</rss>

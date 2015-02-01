@@ -1,21 +1,68 @@
-# Site settings
-title: Danilo Vaz
-subtitle: "Show me your code, to tell you who you are"
-email: danilo@canarinho.co
-description: "amateur writer, web developer in Focusnetworks, co-founder in Canarinho and in love with Mariana Gimenes :)"
-baseurl: ""
-url: "http://danilovaz.github.io"
-twitter_username: "_danilovaz"
-github_username:  "danilovaz"
-instagram_username: "vazdanilo"
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://danilovaz.github.io" # the base hostname & protocol for your site
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Danilo Vaz
+  avatar: avatar.jpg
+  gravatar: # email md5 hash
+  description: "Oi, eu sou Danilo Vaz. Um desenvolvedor caipira de Cunha que mora em São José dos Campos. Também trabalho em uma empresa maravilhosa que tem mesa de bilhar." # used by search engines
 
-# Pagination
+  # Header and footer text
+  header_text: >
+     <p>Oi, eu sou Danilo Vaz.</p>
+
+     <p>Um desenvolvedor caipira de Cunha que mora em São José dos campos.</p>
+     <p>Também trabalho em uma empresa maravilhosa que tem mesa de bilhar.</p>
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+
+  # Icons
+  rss: false
+  email_address: "danilo@canarinho.co"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "danilovaz"
+  google_plus:
+  instagram:
+  linkedin:  "http://br.linkedin.com/in/danilovaz"
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # full URL
+  steam:
+  tumblr:
+  twitter: "_danilovaz"
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # tracking id, e.g. "UA-000000-01"
+  disqus_shortname:
+
+  # Localization strings
+  str_follow_on: "Siga em"
+  str_rss_follow: "Siga RSS feed"
+  str_email: "Email"
+  str_next: "Próximo"
+  str_prev: "Anterior"
+  str_continue_reading: "Continue lendo"
+
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
 paginate: 5
+paginate_path: "blog/page:num"
 
-# Sass
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
 sass:
-    style: :compressed
+  sass_dir: _sass
+  style: :compressed
