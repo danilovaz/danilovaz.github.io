@@ -42,11 +42,11 @@ theme:
   youtube:
 
   # Scripts
-  google_analytics: # tracking id, e.g. "UA-000000-01"
+  google_analytics: "UA-53501202-1" # tracking id, e.g. "UA-000000-01"
   disqus_shortname:
 
   # Localization strings
-  str_follow_on: "Siga em"
+  str_follow_on: "Siga no"
   str_rss_follow: "Siga RSS feed"
   str_email: "Email"
   str_next: "Próximo"
