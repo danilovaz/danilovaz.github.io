@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalando Git no ~~Ruindows~~ Windows
+title: Instalando Git no Windows
 feature-img: "img/tela-azul-windows.png"
 ---
 
