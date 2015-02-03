@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Criando repositório com Git
+title: Criando repositório Git
 feature-img: "img/tela-azul-windows.png"
 ---
 
