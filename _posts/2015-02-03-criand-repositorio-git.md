@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Criando repositório Git
-feature-img: "img/github.jpg"
+feature-img: "img/github.png"
 ---
 
 No artigo anterior eu ensinei como [instalar Git no Windows](http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html). Agora vou ensinar como criar um repositório local e enviá-lo para o Github e começar a fazer o controle de versionamento do seu projeto.
