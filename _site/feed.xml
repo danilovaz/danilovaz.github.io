@@ -5,7 +5,56 @@
     <atom:link href="http://danilovaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://danilovaz.github.io/</link>
     <description>Oi, eu sou Danilo Vaz. Um desenvolvedor caipira de Cunha que mora em São José dos Campos. Também trabalho em uma empresa maravilhosa que tem mesa de bilhar.</description>
-    <pubDate>Mon, 02 Feb 2015 02:00:40 -0200</pubDate>
+    <pubDate>Mon, 02 Feb 2015 23:10:23 -0200</pubDate>
+    
+      <item>
+        <title>Instalando Git no (snif) Windows</title>
+        <link>http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html</link>
+        <guid isPermaLink="true">http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html</guid>
+        <description>&lt;p&gt;Antes que me crucifiquem, esse post tem o intuito nobre de ajudar um amigo a migrar do desenvolvimento &amp;quot;desktop&amp;quot; pra desenvolvimento web, que é onde ele tem mais interesse e por isso vou dar um help no que eu puder passar do pouco que sei.&lt;/p&gt;
+
+&lt;p&gt;Enquanto ele não providencia um Linux ou um Mac :p vamos de &lt;del&gt;Ruindows&lt;/del&gt; Windows mesmo.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalando-git-no-windows&quot;&gt;Instalando Git no Windows&lt;/h2&gt;
+
+&lt;p&gt;Para a surpresa geral da nação, instalar o Git no Windows é muito fácil. Basta acessar o site &lt;a href=&quot;http://msysgit.github.io/&quot;&gt;MsysGit&lt;/a&gt; baixar o Git SCM, instalar o &lt;code&gt;.exe&lt;/code&gt; e ser feliz (até onde é possível com Windows).&lt;/p&gt;
+
+&lt;h2 id=&quot;usando-git-no-windows&quot;&gt;Usando Git no Windows&lt;/h2&gt;
+
+&lt;p&gt;Ao instalar o Git, você terá duas formas de utilizá-lo: Git GUI e Git BASH.&lt;/p&gt;
+
+&lt;p&gt;O Git GUI nada mais é do que uma interface gráfica &amp;quot;bonitinha&amp;quot; onde tudo que você precisa fazer é clicar e clicar e clicar.&lt;/p&gt;
+
+&lt;p&gt;Particularmente, eu prefiro utilizar o prompt de comando (terminal, bash, whatever). Considero ser mais prático e rápido. Mas gosto é igual, você sabe, cada um tem o seu.&lt;/p&gt;
+
+&lt;p&gt;Por isso para esse post, onde o intuito é nortear um caminho para meu amigo aprender de uma maneira mais correta o que a web tem de melhor, vou utilizar exemplos partindo do BASH.&lt;/p&gt;
+
+&lt;h2 id=&quot;configurando-git&quot;&gt;Configurando Git&lt;/h2&gt;
+
+&lt;p&gt;A primeira coisa a se fazer após instalar o Git, é configurar sua identidade para que o Git possa identificar você e suas ações/requisições.&lt;/p&gt;
+
+&lt;p&gt;Para isso, abra o Git BASH e defina seu username&amp;quot;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git config --global user.name &amp;quot;José das Couves&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Após configurar seu username, vamos configurar o seu e-mail (deve ser o mesmo que você se cadastrou no &lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git config --global user.email josecouves@couves.com.br
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto, seu Git está configurado. Mas por via das dúvidas rode o seguinte comando para verificar se suas informações estão corretas:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ git config --list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Por hoje é só isso, foi um post curto e simples apenas para mostrar como instalar Git no Windows e utilizá-lo pelo prompt de comando.&lt;/p&gt;
+
+&lt;p&gt;Esse é o primeiro post de uma sério sobre Git, no qual vou ensinar do básico até algumas dicas mais avançadas para quem ainda não conhece Git.&lt;/p&gt;
+
+&lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Mostre-me teu código que te digo quem tu és.&amp;quot;
+- Danilo Vaz&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 02 Feb 2015 00:00:00 -0200</pubDate>
+      </item>
     
       <item>
         <title>Série de posts sobre Slush</title>
@@ -19,23 +68,26 @@
 
 &lt;p&gt;Pensando nisso, elaborei uma série de posts dividida em 3 partes onde vou abordar os seguintes tópicos:&lt;/p&gt;
 
-&lt;h4 id=&quot;conhea-o-slush&quot;&gt;Conheça o Slush&lt;/h4&gt;
+&lt;h4 id=&quot;conheça-o-slush&quot;&gt;Conheça o Slush&lt;/h4&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;O que é Slush?&lt;/li&gt;
-  &lt;li&gt;Por que utilizar o Slush e não o Yeoman?&lt;/li&gt;
-  &lt;li&gt;Quando utilizar o Slush?&lt;/li&gt;
+&lt;li&gt;O que é Slush?&lt;/li&gt;
+&lt;li&gt;Por que utilizar o Slush e não o Yeoman?&lt;/li&gt;
+&lt;li&gt;Quando utilizar o Slush?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;slush-primeiros-passos&quot;&gt;Slush, primeiros passos&lt;/h4&gt;
+&lt;h4 id=&quot;slush,-primeiros-passos&quot;&gt;Slush, primeiros passos&lt;/h4&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Instalando Slush&lt;/li&gt;
-  &lt;li&gt;Criando seu primeiro scaffolding com Slush&lt;/li&gt;
+&lt;li&gt;Instalando Slush&lt;/li&gt;
+&lt;li&gt;Criando seu primeiro scaffolding com Slush&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;criando-seu-prprio-generator-com-slush&quot;&gt;Criando seu próprio generator com Slush&lt;/h4&gt;
+&lt;h4 id=&quot;criando-seu-próprio-generator-com-slush&quot;&gt;Criando seu próprio generator com Slush&lt;/h4&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Criando seu próprio generator&lt;/li&gt;
-  &lt;li&gt;Publicando seu generator&lt;/li&gt;
+&lt;li&gt;Criando seu próprio generator&lt;/li&gt;
+&lt;li&gt;Publicando seu generator&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;A primeira parte é mais filosófica. Onde pretendo explicar o que o Slush se propõe a fazer, a diferença entre ele e o Yeoman e quando eu acho válido utilizar o Slush.&lt;/p&gt;
@@ -47,7 +99,7 @@
 &lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“Mostre-me teu código que te digo quem tu és.”
+&lt;p&gt;&amp;quot;Mostre-me teu código que te digo quem tu és.&amp;quot;
 - Danilo Vaz&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
@@ -58,11 +110,13 @@
         <title>Lançamento do blog e #1postpordia</title>
         <link>http://danilovaz.github.io/2015/01/31/lancamento-do-blog-e-1postpordia.html</link>
         <guid isPermaLink="true">http://danilovaz.github.io/2015/01/31/lancamento-do-blog-e-1postpordia.html</guid>
-        <description>&lt;p&gt;Fala galera!&lt;/p&gt;
-
-&lt;p&gt;Esse é o primeiro post do meu blog (yeeeeeaaaah!). Finalmente criei coragem (ou vergonha na cara?) de criar meu blog para compartilhar minhas divagações webnéticas :p e me estimular a me atualizar cada vez mais. Afinal de contas, aprende-se muito mais quando se ensina.&lt;/p&gt;
+        <description>&lt;p&gt;Esse é o primeiro post do meu blog (yeeeeeaaaah!). Finalmente criei coragem (ou vergonha na cara?) de criar meu blog para compartilhar minhas divagações webnéticas :p e me estimular a me atualizar cada vez mais. Afinal de contas, aprende-se muito mais quando se ensina.&lt;/p&gt;
 
 &lt;p&gt;Para não deixar a peteca cair, vou abraçar a ideia do &lt;a href=&quot;https://github.com/fdaciuk&quot;&gt;Fernando Daciuk&lt;/a&gt; e &lt;a href=&quot;https://github.com/willianjusten&quot;&gt;Willian Justen&lt;/a&gt; de criar &lt;a href=&quot;http://willianjusten.com.br/um-post-por-dia/&quot;&gt;#1postpordia&lt;/a&gt;. Não é uma tarefa fácil, mas vamos ver se consigo manter o ritmo.&lt;/p&gt;
+
+&lt;p&gt;A maioria dos assuntos que vou abordar aqui, vou retirar de uma outra grande iniciativa: &lt;a href=&quot;https://github.com/LFeh/poste-mais&quot;&gt;Poste mais&lt;/a&gt;. Criado pelo &lt;a href=&quot;https://github.com/LFeh&quot;&gt;Luiz Felipe Tartarotti Fialho&lt;/a&gt; através das &lt;a href=&quot;https://github.com/LFeh/poste-mais/issues&quot;&gt;issues&lt;/a&gt; a comunidade dá ideias de assuntos a serem abordados em posts. É super simples e dá um tremendo incentivo. Confira o &lt;a href=&quot;https://github.com/LFeh/poste-mais&quot;&gt;repositório&lt;/a&gt; e colabore indicando novos assuntos e/ou escreva seus posts.&lt;/p&gt;
+
+&lt;p&gt;Mas caso queira me indicar assuntos diretamente, abra uma issue &lt;a href=&quot;https://github.com/danilovaz/danilovaz.github.io/issues&quot;&gt;aqui&lt;/a&gt; e com o título do assunto e o que gostaria que fosse abordado.&lt;/p&gt;
 
 &lt;p&gt;Não sei bem se esse post aqui conta rs, mas por via das dúvidas começo postando amanhã algo relevante. Tenho plena consciência que ao longo do tempo vou ter que ir aperfeiçoando meus posts.&lt;/p&gt;
 
@@ -75,7 +129,7 @@
 &lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“Mostre-me teu código que te digo quem tu és.”
+&lt;p&gt;&amp;quot;Mostre-me teu código que te digo quem tu és.&amp;quot;
 - Danilo Vaz&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
