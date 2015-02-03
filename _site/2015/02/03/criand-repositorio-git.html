@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+	<meta charset="utf-8">
+	<title>Criando repositório Git | Danilo Vaz</title>
+	<meta name="description" content="No artigo anterior eu ensinei como instalar Git no Windows. Agora vou ensinar como criar um repositório local e enviá-lo para o Github e começar a fazer o co...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<!-- Canonical -->
+	<link rel="canonical" href="http://danilovaz.github.io/2015/02/03/criand-repositorio-git.html">
+	
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Danilo Vaz" href="http://danilovaz.github.io/feed.xml" />
+	
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-53501202-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+
+  <body>
+    <header class="site-header">
+
+	<div class="branding">
+		
+		<a href="/">
+      <img class="avatar" src="/img/avatar.jpg" alt=""/>
+    </a>
+		
+		
+		<h1 class="site-title">
+			<a href="/">Danilo Vaz</a>
+		</h1>
+	</div>
+	
+	<nav class="site-nav">
+		<ul>
+			
+				
+			
+				
+				<li>
+					<a class="page-link" href="/sobre/">Sobre</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+
+
+<li>
+	<a href="mailto:danilo@canarinho.co" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/danilovaz" title="Siga no GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="http://br.linkedin.com/in/danilovaz" title="Siga no LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/_danilovaz" title="Siga no Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+		</ul>
+	</nav>
+	
+</header>
+
+
+    <div class="content">
+      <article class="feature-image">
+
+  <header style="background-image: url('/img/github.png')">
+    <h1 class="title">Criando repositório Git</h1>
+    
+    <p class="meta">
+    February 3, 2015
+    
+    </p>
+  </header>
+
+  <section class="post-content">
+    <p>No artigo anterior eu ensinei como <a href="http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html">instalar Git no Windows</a>. Agora vou ensinar como criar um repositório local e enviá-lo para o Github e começar a fazer o controle de versionamento do seu projeto.</p>
+
+<h2 id="criando-o-repositório-local">Criando o repositório local</h2>
+
+<p>Para criar um repositório local, acesse o terminal e crie a pasta que vai conter o seu projeto.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>Documents/User/Projetos
+
+<span class="nv">$ </span>mkdir meu-primeiro-repositorio
+
+<span class="nv">$ </span><span class="nb">cd </span>meu-primeiro-repositorio
+</code></pre></div>
+<p>Pronto, agora que criou a pasta do seu projeto e está dentro dele, vamos rodar o comando <code>git init</code></p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git init
+</code></pre></div>
+<p>Esse comando vai criar em nosso projeto uma pasta invisível chamada .git e criar uma branch para controlar nossos arquivos. Mas até o momento não temos nenhum arquivo sendo controlado, vamos então criar o arquivo README.md que será uma espécial de manual dentro do seu repositório</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>touch README.md
+</code></pre></div>
+<p>Legal, criamos o arquivo. Agora temos que verificar se esse arquivo está sendo apontado pelo Git como um arquivo que precisa ser incluído em seu Stage para que possa ser commitado.
+Para isso, rode o comando</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status
+</code></pre></div>
+<p>Esse comando lista todos os arquivos locais de nosso projeto que: são novos, sofreram modificações ou foram deletados.</p>
+
+<p>Veja que o README.md apareceu como <code>untracked file</code>, ou seja, esse arquivo não está sendo controlado pelo Git.</p>
+
+<p>Existem duas formas aqui para que possamos incluir o README.md ao Stage:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add -A
+</code></pre></div>
+<p>Esse comando adiciona à Stage todos os arquivos novos ou que sofreram modificações. Esse comando requer atenção quando você está trabalhando em um repositório com várias pessoas, pois, pode ser que você coloque na trilha de Stage arquivos que só deviriam ter em sua máquina local. Por isso fique atento e sempre rode <code>git status</code> para ter certeza dos arquivos que devem ser enviados.</p>
+
+<p>A outra maneira de adicionar arquivos à Stage é adicionando uma por uma &quot;na mão&quot;. Dependendo das alterações é trabalhoso, porém mais para frente vou ensinar um comando que facilita a vida. Mas por hora, como vamos adicionar um arquivo só rode</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add README.md
+</code></pre></div>
+<p>Pronto, adicionamos o README.md à Stage. Para verificar se está tudo certo, rode o <code>git status</code> agora deve ser exibido <code>new file</code> antes do nome do README.md</p>
+
+<p>Estamos quase no fim. Agora vamos commitar as alterações no repositório para que depois possamos enviar ao servidor. O processo de commit basicamente pega todos os arquivos que você adicionou à Stage e envia para o HEAD que aponta para o último commit do repositório remoto.
+Vamos commitar.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Adiciona README.md&quot;</span>
+</code></pre></div>
+<p>Agora vou mostrar um passo que não precisa ser feito sempre, apenas quando criamos o repositório por linha de comando via <code>git init</code>. Quando criamos o repositório direto no Github esse passo pode ser pulado.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/repo-name.git
+</code></pre></div>
+<p>E por fim, mas não menos importante vamos enviar para o repositório remoto o nosso commit.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git push -u origin master
+</code></pre></div>
+<p>WOW! Parabéns, você criou seu primeiro commit :smiley:</p>
+
+<p>Agora é só você acessar o Github e visualizar seu primeiro repositório!</p>
+
+<p>Fique ligado nos próximos posts.</p>
+
+<p>Sem mais delongas, inté!</p>
+
+<blockquote>
+<p>&quot;Mostre-me teu código que te digo quem tu és.&quot;
+- Danilo Vaz</p>
+</blockquote>
+
+  </section>
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'danilovaz'; 
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </div>
+
+    
+<footer class="site-footer">
+	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+</p>
+</footer>
+
+  </body>
+  
+</html>

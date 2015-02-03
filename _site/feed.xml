@@ -5,10 +5,75 @@
     <atom:link href="http://danilovaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://danilovaz.github.io/</link>
     <description>Oi, eu sou Danilo Vaz. Um desenvolvedor caipira de Cunha que mora em São José dos Campos. Também trabalho em uma empresa maravilhosa que tem mesa de bilhar.</description>
-    <pubDate>Mon, 02 Feb 2015 23:10:23 -0200</pubDate>
+    <pubDate>Tue, 03 Feb 2015 13:55:51 -0200</pubDate>
     
       <item>
-        <title>Instalando Git no (snif) Windows</title>
+        <title>Criando repositório Git</title>
+        <link>http://danilovaz.github.io/2015/02/03/criand-repositorio-git.html</link>
+        <guid isPermaLink="true">http://danilovaz.github.io/2015/02/03/criand-repositorio-git.html</guid>
+        <description>&lt;p&gt;No artigo anterior eu ensinei como &lt;a href=&quot;http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html&quot;&gt;instalar Git no Windows&lt;/a&gt;. Agora vou ensinar como criar um repositório local e enviá-lo para o Github e começar a fazer o controle de versionamento do seu projeto.&lt;/p&gt;
+
+&lt;h2 id=&quot;criando-o-repositório-local&quot;&gt;Criando o repositório local&lt;/h2&gt;
+
+&lt;p&gt;Para criar um repositório local, acesse o terminal e crie a pasta que vai conter o seu projeto.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Documents/User/Projetos
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir meu-primeiro-repositorio
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;meu-primeiro-repositorio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto, agora que criou a pasta do seu projeto e está dentro dele, vamos rodar o comando &lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Esse comando vai criar em nosso projeto uma pasta invisível chamada .git e criar uma branch para controlar nossos arquivos. Mas até o momento não temos nenhum arquivo sendo controlado, vamos então criar o arquivo README.md que será uma espécial de manual dentro do seu repositório&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Legal, criamos o arquivo. Agora temos que verificar se esse arquivo está sendo apontado pelo Git como um arquivo que precisa ser incluído em seu Stage para que possa ser commitado.
+Para isso, rode o comando&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Esse comando lista todos os arquivos locais de nosso projeto que: são novos, sofreram modificações ou foram deletados.&lt;/p&gt;
+
+&lt;p&gt;Veja que o README.md apareceu como &lt;code&gt;untracked file&lt;/code&gt;, ou seja, esse arquivo não está sendo controlado pelo Git.&lt;/p&gt;
+
+&lt;p&gt;Existem duas formas aqui para que possamos incluir o README.md ao Stage:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add -A
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Esse comando adiciona à Stage todos os arquivos novos ou que sofreram modificações. Esse comando requer atenção quando você está trabalhando em um repositório com várias pessoas, pois, pode ser que você coloque na trilha de Stage arquivos que só deviriam ter em sua máquina local. Por isso fique atento e sempre rode &lt;code&gt;git status&lt;/code&gt; para ter certeza dos arquivos que devem ser enviados.&lt;/p&gt;
+
+&lt;p&gt;A outra maneira de adicionar arquivos à Stage é adicionando uma por uma &amp;quot;na mão&amp;quot;. Dependendo das alterações é trabalhoso, porém mais para frente vou ensinar um comando que facilita a vida. Mas por hora, como vamos adicionar um arquivo só rode&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto, adicionamos o README.md à Stage. Para verificar se está tudo certo, rode o &lt;code&gt;git status&lt;/code&gt; agora deve ser exibido &lt;code&gt;new file&lt;/code&gt; antes do nome do README.md&lt;/p&gt;
+
+&lt;p&gt;Estamos quase no fim. Agora vamos commitar as alterações no repositório para que depois possamos enviar ao servidor. O processo de commit basicamente pega todos os arquivos que você adicionou à Stage e envia para o HEAD que aponta para o último commit do repositório remoto.
+Vamos commitar.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Adiciona README.md&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora vou mostrar um passo que não precisa ser feito sempre, apenas quando criamos o repositório por linha de comando via &lt;code&gt;git init&lt;/code&gt;. Quando criamos o repositório direto no Github esse passo pode ser pulado.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/repo-name.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E por fim, mas não menos importante vamos enviar para o repositório remoto o nosso commit.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;WOW! Parabéns, você criou seu primeiro commit :smiley:&lt;/p&gt;
+
+&lt;p&gt;Agora é só você acessar o Github e visualizar seu primeiro repositório!&lt;/p&gt;
+
+&lt;p&gt;Fique ligado nos próximos posts.&lt;/p&gt;
+
+&lt;p&gt;Sem mais delongas, inté!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Mostre-me teu código que te digo quem tu és.&amp;quot;
+- Danilo Vaz&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 03 Feb 2015 00:00:00 -0200</pubDate>
+      </item>
+    
+      <item>
+        <title>Instalando Git no Windows</title>
         <link>http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html</link>
         <guid isPermaLink="true">http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html</guid>
         <description>&lt;p&gt;Antes que me crucifiquem, esse post tem o intuito nobre de ajudar um amigo a migrar do desenvolvimento &amp;quot;desktop&amp;quot; pra desenvolvimento web, que é onde ele tem mais interesse e por isso vou dar um help no que eu puder passar do pouco que sei.&lt;/p&gt;
