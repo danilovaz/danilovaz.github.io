@@ -43,7 +43,7 @@ theme:
 
   # Scripts
   google_analytics: "UA-53501202-1" # tracking id, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: "danilovaz"
 
   # Localization strings
   str_follow_on: "Siga no"
