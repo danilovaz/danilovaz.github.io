@@ -8,7 +8,7 @@ Antes que me crucifiquem, esse post tem o intuito nobre de ajudar um amigo a mig
 
 Enquanto ele não providencia um Linux ou um Mac :p vamos de ~~Ruindows~~ Windows mesmo.
 
-##Instalando Git no Windows
+## Instalando Git no Windows
 
 Para a surpresa geral da nação, instalar o Git no Windows é muito fácil. Basta acessar o site [MsysGit](http://msysgit.github.io/) baixar o Git SCM, instalar o `.exe` e ser feliz (até onde é possível com Windows).
 
