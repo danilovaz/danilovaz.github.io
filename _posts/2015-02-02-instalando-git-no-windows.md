@@ -4,7 +4,7 @@ title: Instalando Git no Windows
 feature-img: "img/tela-azul-windows.png"
 ---
 
-Antes que me crucifiquem, esse post tem um intuito nobre de ajudar um amigo a migrar do desenvolvimento "desktop" pra desenvolvimento web, que é onde ele tem mais interesse e por isso vou dar um help no que eu puder passar do pouco que sei.
+Antes que me crucifiquem, esse post tem o intuito nobre de ajudar um amigo a migrar do desenvolvimento "desktop" pra desenvolvimento web, que é onde ele tem mais interesse e por isso vou dar um help no que eu puder passar do pouco que sei.
 
 Enquanto ele não providencia um Linux ou um Mac :p vamos de ~~Ruindows~~ Windows mesmo.
 
