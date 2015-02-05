@@ -10,7 +10,7 @@ Enquanto ele não providencia um Linux ou um Mac :p vamos de ~~Ruindows~~ Window
 
 ## Instalando Git no Windows
 
-Para a surpresa geral da nação, instalar o Git no Windows é muito fácil. Basta acessar o site [MsysGit](http://msysgit.github.io/) baixar o Git SCM, instalar o `.exe` e ser feliz (até onde é possível com Windows).
+Para a surpresa geral da nação, instalar o Git no Windows é muito fácil. Basta acessar o site do [MsysGit](http://msysgit.github.io/), baixar o Git SCM, instalar o `.exe` e ser feliz (até onde é possível com Windows).
 
 ## Usando Git no Windows
 
@@ -20,7 +20,7 @@ O Git GUI nada mais é do que uma interface gráfica "bonitinha" onde tudo que v
 
 Particularmente, eu prefiro utilizar o prompt de comando (terminal, bash, whatever). Considero ser mais prático e rápido. Mas gosto é igual, você sabe, cada um tem o seu.
 
-Por isso para esse post, onde o intuito é nortear um caminho para meu amigo aprender de uma maneira mais correta o que a web tem de melhor, vou utilizar exemplos partindo do BASH.
+Já que para esse post, o intuito é nortear um caminho para meu amigo aprender de uma maneira mais correta o que a web tem de melhor, vou utilizar exemplos partindo do BASH.
 
 ## Configurando Git
 
@@ -46,7 +46,7 @@ $ git config --list
 
 Por hoje é só isso, foi um post curto e simples apenas para mostrar como instalar Git no Windows e utilizá-lo pelo prompt de comando.
 
-Esse é o primeiro post de uma sério sobre Git, no qual vou ensinar do básico até algumas dicas mais avançadas para quem ainda não conhece Git.
+Esse é o primeiro post de uma série sobre Git, no qual vou ensinar do básico até algumas dicas mais avançadas para quem ainda não conhece Git.
 
 Sem mais delongas, inté!
 
