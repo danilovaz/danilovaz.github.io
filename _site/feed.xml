@@ -5,8 +5,7 @@
     <atom:link href="http://danilovaz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://danilovaz.github.io/</link>
     <description>Oi, eu sou Danilo Vaz. Um desenvolvedor caipira de Cunha que mora em São José dos Campos. Também trabalho em uma empresa maravilhosa que tem mesa de bilhar.</description>
-    <pubDate>Thu, 05 Feb 2015 14:07:19 -0200</pubDate>
-    
+
       <item>
         <title>Conheca O Slush</title>
         <link>http://danilovaz.github.io/2015/02/04/conheca-o-slush.html</link>
@@ -14,7 +13,7 @@
         <description></description>
         <pubDate>Wed, 04 Feb 2015 00:00:00 -0200</pubDate>
       </item>
-    
+
       <item>
         <title>Criando repositório Git</title>
         <link>http://danilovaz.github.io/2015/02/03/criand-repositorio-git.html</link>
@@ -79,7 +78,7 @@ Vamos commitar.&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Feb 2015 00:00:00 -0200</pubDate>
       </item>
-    
+
       <item>
         <title>Instalando Git no Windows</title>
         <link>http://danilovaz.github.io/2015/02/02/instalando-git-no-windows.html</link>
@@ -128,7 +127,7 @@ Vamos commitar.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Feb 2015 00:00:00 -0200</pubDate>
       </item>
-    
+
       <item>
         <title>Série de posts sobre Slush</title>
         <link>http://danilovaz.github.io/2015/02/01/serie-de-posts-sobre-slush.html</link>
@@ -178,7 +177,7 @@ Vamos commitar.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Feb 2015 00:00:00 -0200</pubDate>
       </item>
-    
+
       <item>
         <title>Lançamento do blog e #1postpordia</title>
         <link>http://danilovaz.github.io/2015/01/31/lancamento-do-blog-e-1postpordia.html</link>
@@ -208,6 +207,6 @@ Vamos commitar.&lt;/p&gt;
 </description>
         <pubDate>Sat, 31 Jan 2015 00:00:00 -0200</pubDate>
       </item>
-    
+
   </channel>
 </rss>
