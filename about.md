@@ -2,7 +2,7 @@
 layout: page
 title: Quero de Natal
 permalink: /querodenatal/
-feature-img: "img/sample_feature_img_2.png"
+feature-img: "img/launch-blog.jpg"
 ---
 <p>O Espadachim de Carvão e As Pontes de Puzur - Affonso Solano</p>
 <p>Autoridade - Jeff VanderMeer</p>
