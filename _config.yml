@@ -23,12 +23,10 @@ description: 1993. Casado. Desenvolvedor front-end.
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Sobre: "aboutme"
+  Projetos:
+    - Prupru Ipsum: "https://github.com/danilovaz/prupru-ipsum"
+BeerJS: "https://github.com/beerjs/sjc"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -44,7 +42,7 @@ author:
   facebook: vazdanilo  # eg. daattali
   github: danilovaz    # eg. daattali
   twitter: _danilovaz   # eg. daattali
-  linkedin: https://br.linkedin.com/in/danilovaz  # eg. "pub/dean-attali/8/946/143"
+  linkedin: danilovaz  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
 
 # Select which links to show in the footer
