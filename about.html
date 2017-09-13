@@ -1,0 +1,18 @@
+---
+layout: minimal
+title: "About me"
+permalink: /about/index.html
+description: "Danilo Vaz, born in Cunha - SP / Brazil. Lives in São José dos Campos - SP / Brazil and works at Embraer by Focusnetworks as a Lead Front-End Developer"
+---
+
+<img itemprop="image" class="img-rounded about_perfil" src="https://pbs.twimg.com/profile_images/862645200291860482/Vf8EQmHn_400x400.jpg" alt="Photo of Danilo Vaz">
+
+<h2>My projects</h2>
+
+<div class="aboutme">
+  <ul class="recent">
+    {% for project in site.projects %}
+        <li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+      {% endfor %}
+  </ul>
+</div>

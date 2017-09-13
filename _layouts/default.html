@@ -1,9 +1,15 @@
 ---
-layout: base
+layout: compress
 ---
-
-<div class="intro-header"></div>
-
-<div role="main" class="container">
-  {{ content }}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-default.html %}
+            <main role="main" class="content">
+                {{ content }}
+            </main>
+        {% include scripts.html %}
+    </body>
+</html>

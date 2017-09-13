@@ -1,18 +1,21 @@
 ---
-layout: base
+layout: compress
 ---
 
-{% include header.html type="page" %}
-
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {{ content }}
-	    {% if page.comments %}
-        <div class="disqus-comments">
-	        {% include disqus.html %}
-        </div>
-	    {% endif %}
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  	{% include head.html %}
+    <body>
+    	{% include svg-icons.html %}
+		<header class="page-header">
+			<h1 class="post-title">{{ page.title }}</h1>
+			{% include menu-search.html %}
+		</header>
+        <main>
+		    {{ content }}
+		</main>
+        {% include footer.html %}
+        {% include scripts.html %}
+		
+    </body>
+</html>

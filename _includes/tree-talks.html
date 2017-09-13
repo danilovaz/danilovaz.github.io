@@ -1,0 +1,17 @@
+<div class="tree-posts">
+
+    <h3>*Talks*</h3>
+
+    {% for talk in site.talks %}
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open the talk" href="{{ talk.url }}">
+                <h2 class="post-title" itemprop="name">{{ talk.title }}</h2>
+            </a>
+        </div>
+    </article>
+
+    {% endfor %}
+
+</div>
