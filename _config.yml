@@ -2,7 +2,7 @@
 title: Danilo Vaz - FrontEnd Developer
 description: "A blog about HTML, CSS, JavaScript, Ember.js, Progressive Web Apps"
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://danilovaz.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+url: "https://danilovaz.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
 username: Danilo Vaz
 user_title: Danilo Vaz - FrontEnd Developer
