@@ -32,6 +32,8 @@ links:
     url: /
   - title: my posts
     url: /posts
+  - title: my talks
+    url: /talks
   - title: series
     url: /series
   - title: tags
@@ -40,6 +42,10 @@ links:
     url: /about
   - title: what I'm doing now
     url: /doing
+# talks
+talks:
+  - title: 'Ember.js: passado, presente e futuro'
+    url: 'https://danilovaz.github.io'
 # projects in header index
 #projects:
   #- name: asciilang
